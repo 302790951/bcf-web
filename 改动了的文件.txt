@@ -4,6 +4,10 @@
 4.style.css
 5.keys_backup_tutorial -->en.html &amp; zh-ch.html
 //the above content had update at 2018年7月31日14:31:02
+----------------------------
 6.add file folder 3525
 7.add image mobile-3.png
 8.add file ameim_upload.py
+----------------------------
+9.index.html --金字塔动画
+10.animate.css --金字塔动画
