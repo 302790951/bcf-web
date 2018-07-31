@@ -625,6 +625,21 @@
     -webkit-animation: fadeScaleOL .5s ease-in both;
 }
 
+/*add on 2018-7-31 17:32:12*/
+.fadeInWin4{
+	animation: fadeScaleOL 0.5s ease-in 2.5s both;
+    -webkit-animation: fadeScaleOL 0.5s 2.5s ease-in both;
+}
+
+.fadeInWin5 {
+    animation: fadeScaleOR .5s ease-in 3s both;
+    -webkit-animation: fadeScaleOR .5s ease-in 3s both;
+}
+
+.fadeInWin6 {
+    animation: fadeScaleOL .5s ease-in 3.5s both;
+    -webkit-animation: fadeScaleOL .5s ease-in 3.5s both;
+}
 
 .fadeInFast {
     animation: fadeInUp .6s linear both;
