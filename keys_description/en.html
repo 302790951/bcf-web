@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BCM Account Key Q&amp;A</title>
+    <base href="."/>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content=""/>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+    <meta http-equiv="expires" content="0">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/libs.css?v=1499154183394">
+    <link rel="stylesheet" href="../styles/index.css?v=1499154183394">
+    <link rel="stylesheet" href="../styles/common.css?v=1499154183394">
+    <script src="../scripts/libs.js?v=1499154183394"></script>
+</head>
+<body class="body_key_description">
+    <div class="container container_key_description">
+        <div class="row">
+            <h4 class="text-center h_key_description">BCM Public and Private key Q&amp;A</h4>
+            <div class="sub_h_key_description">    
+                Q:Why do I need a public/private key pair on BCM?
+            </div>
+            <div class="sub_h_key_description">    
+                A:
+            </div>
+            <div class="span_key_description">    
+                The public/private key pair is used for encryption and authentication. The private key
+                is stored only on user's local device and used to generate user’s digital signature, which
+                can be verified by the paired public key. The public key is uploaded and used to encrypt
+                data others sent, which can only be decrypted by the paired private key. The public key
+                is also used to create user’s identity OpenID.
+            </div>
+            
+            <div> 
+                  <img class="img_key_description" src="./images/1.png" />
+            </div>
+            
+            <div class="sub_h_key_description">    
+                Q: How is key pair used on BCM?
+            </div>
+            <div class="sub_h_key_description">    
+                A:
+            </div>
+            <div class="span_key_description">    
+                Login: BCM uses private key stored on local device to authenticate identity. Users need
+                to import their private keys for authentication when they try to login to their account
+                through other devices.
+            </div>
+            
+            <div> 
+                  <img class="img_key_description" src="./images/2.png" />
+            </div>
+            <div class="span_key_description">    
+                Message: The key pair is used to negotiate a symmetric encryption key to encrypt
+                communication between two users while keeping their private keys and the result of the
+                exchange secret from all but themselves. Alice and Bob exchange their public keys and
+                then calculate with their own private keys and the received public key based on DH
+                algorithm, generating the same encryption key.
+            </div>
+            <div> 
+                  <img class="img_key_description" src="./images/3.png" />
+            </div>
+            <div class="span_key_description">    
+                Transaction :
+                For Alice to transfer a coin to Bob, Alice uses her private key to sign the payment sent
+                to Bob’s wallet address ,authenticating the coin belongs to Alice, and ensuring only Bob
+                can transfer these coin with his private key.
+            </div>
+            <div> 
+                  <img class="img_key_description" src="./images/4.png" />
+            </div>
+            <div class="sub_h_key_description">    
+                Q : What should user do if private key was lost ?
+            </div>
+            <div class="sub_h_key_description">    
+                A:
+            </div>
+            <div class="span_key_description">    
+                The private key is stored on local device. BCM never hold users private keys. Users
+                should keep their private key safe and secure. BCM will provide backup function to
+                export their private key to another device. Users can use the private key in backup
+                device for authentication .
+            </div>
+            <div> 
+                  <img class="img_key_description" src="./images/5.png" />
+            </div>
+            
+           <div class="sub_h_key_description">    
+                Q : What happens to leaking private key to others?
+            </div>
+            <div class="sub_h_key_description">    
+                A:
+            </div>
+            <div class="span_key_description">    
+                It is very important to keep the private key safe and secure, away from prying eyes, in
+                case anything happens to your account. Never leak your private key to others.
+                <br /><br /><br />
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

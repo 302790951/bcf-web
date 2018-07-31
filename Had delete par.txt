@@ -1,0 +1,133 @@
+<!--
+				<div class="main-item p8">
+					<div class="page-title">INVESTOR</div>
+					<div class="p8-wrap">
+						<div class="p8-item row">
+							<div class="col-md-4 col-xs-4 p8-item-row"><img src="images/page1-inve_1.png" alt=""></div>
+							<div class="col-md-4 col-xs-4 p8-item-row"><img src="images/page1-inve_2.png" alt=""></div>
+							<div class="col-md-4 col-xs-4 p8-item-row"><img src="images/page1-inve_3.png" alt=""></div>
+						</div>
+						<div class="p8-item row">
+							<div class="col-md-6 col-xs-6 p8-item-row-b">
+								<img src="images/page1-inve_4.png" alt="">
+							</div>
+							<div class="col-md-6 col-xs-6 p8-item-row-b">
+								<img src="images/page1-inve_5.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-item p9">
+					<div class="page-title">Team Introduction</div>
+					<div class="p9-wrap">
+						<div class="p9-people-list1 clearfix">
+							<div class="p9-people-item">
+								<div class="p9-people-block">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-big">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-big">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+							</div>
+							<div class="p9-people-item">
+								<div class="p9-people-block">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-big">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-big">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+							</div>
+							<div class="p9-people-item">
+								<div class="p9-people-block">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-big">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-big">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+							</div>
+						</div>
+						<div class="p9-people-list2 clearfix">
+							<div class="p9-people-item p9-people-sm">
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+							</div>
+							<div class="p9-people-item p9-people-sm">
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+							</div>
+						</div>
+						<div class="p9-people-list2 clearfix">
+							<div class="p9-people-item p9-people-sm">
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+							</div>
+							<div class="p9-people-item p9-people-sm">
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+								<div class="p9-people-block p9-block-sm">
+									<img src="images/icon/head-icon.jpeg" alt="" class="p9-head-sm">
+									<div class="fs-14">Waylon Dalton</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				-->

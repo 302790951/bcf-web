@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="BCM,blockchain,messenger,im，freedom,区块链,通讯">
+    <meta name="Description" content="The first blockchain messenger, born for the freedom of communication.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css?v=6.1">
+    <link rel="stylesheet" href="css/mobile.css?v=7.1">
+    <link rel="stylesheet" href="css/animate.css?v=8.0">
+    <title>BCM，First blockchain messenger</title>
+</head>
+<body>
+    <div class="mobile-soon hide">Comming Soon</div>
+    <div class="mobile-nav hide-nav">
+        <span class="mobile-nav-close" onclick="closeNav()"><img src="images/icon/icon-close.png"></span>
+        <ul class="mobile-list">
+            <li class="mobile-nav-li">
+                <a href="index.html" class="mobile-nav-link active"><i>-</i>HOME</a>
+            </li>
+            <li class="mobile-nav-li">
+                <a href="javascript:void(0);" class="mobile-nav-link" onclick="showDrop(this)"><i>-</i>RESOURCE</a>
+                <ul class="mobile-nav-ul">
+                    <li><a href="javascript:void(0);" onclick="openSoon()" class="mobile-nav-link">BRIEF</a></li>
+                    <li><a href="javascript:void(0);" onclick="openSoon()" class="mobile-nav-link">WHITEPAPER</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-li">
+                <a href="news.html" class="mobile-nav-link"><i>-</i>NEWS</a>
+            </li>
+        </ul>
+    </div>
+    <div class="x-container">
+        <div class="black-mask hide"></div>
+        <div class="x-nav-fixed">
+            <div class="x-nav clearfix">
+                <div class="pull-left">
+                    <a href="index.html" class="fs-36 fwb">BCM</a>
+                </div>
+                <div class="pull-right">
+                    <ul class="x-nav-list">
+                        <li class="x-nav-li"><a href="index.html" class="x-navLink active">HOME</a></li>
+                        <li class="x-nav-li dropDown">
+                            <a href="javascript:void(0);" class="x-navLink">RESOURCE</a>
+                            <ul class="x-nav-ul">
+                                <li><a href="javascript:void(0);" onclick="openSoon()">BRIEF</a></li>
+                                <li><a href="javascript:void(0);" onclick="openSoon()">WHITEPAPER</a></li>
+                            </ul>
+                        </li>
+                        <li class="x-nav-li"><a href="javascript:void(0);" id="gotoDownLoad" class="x-navLink" onclick="gotoDownLoad()">DOWNLOAD</a></li>
+                        <li class="x-nav-li"><a href="news.html" class="x-navLink">NEWS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-title">
+            <span class="menu-btn" onclick="openNav()"><img src="images/menu-btn.png" alt=""></span>
+            <span class="fs-30"><a href="index.html">BCM</a></span>
+        </div>
+        <div class="main-swiper">
+            <div class="main-wrapper">
+                <div class="main-item p1" style="background-image:url(images/p1-bg-repeat.png);">
+                    <div class="p1-bg1" style="background-image:url(images/p1-bg.png);"></div>
+                    <img src="images/page-p1-bg2.png" alt="" class="p1-bg2">
+                    <div class="page-title mobile-hide" style="margin-top: 100px;opacity: 0">Welcome to the world of BCM</div>
+                    <div class="p1-wrap">
+                        <!-- <img src="images/page1-p1-img1.png" alt="" class="p1-img1"-->
+                        <img src="images/animate-num4.gif" class="anit-num">
+                        <img src="images/animate-p1-3.png" class="abs anit-p1-img anit-m4">
+                        <img src="images/animate-p1-4.png" class="abs anit-p1-img anit-m3">
+                        <img src="images/animate-p1-2.png" class="abs anit-p1-img anit-m2">
+                        <img src="images/animate-p1-1.png" class="abs anit-p1-img anit-m1">
+                        <div class="p1-cont">
+                            <img src="images/page1-p1-w1.png?v=2.0" alt="" class="p1-window p1-w1">
+                            <img src="images/page1-p1-w2.png?v=2.0" alt="" class="p1-window p1-w2">
+                            <img src="images/page1-p1-w3.png?v=2.0" alt="" class="p1-window p1-w3">
+                            <!-- 下面三个是一个用于检测金字塔hover的div -->
+                            <div id="hover-mask-top" class="mobile-hide"></div>
+                            <div id="hover-mask-middle" class="mobile-hide"></div>
+                            <div id="hover-mask-bottom" class="mobile-hide"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="page-title pc-hide">ABC</div>-->
+                    <div class="pc-hide">
+                        <span class="page-desc full-width">Welcome to the world of BCM</span>
+                    </div>
+                    <!-- <div class="pc-hide">
+				<span class="what-btn" onclick="openWhat()"><img src="images/what-btn.png" alt=""></span>
+			  </div> -->
+                </div>
+                <div class="main-item p3" id="download">
+                    <div class="page-title p3-title">BCM</div>
+                    <div>
+                        <span class="page-desc">Blockchain Messenger</span>
+                    </div>
+                    <div class="p3-wrap row">
+                        <div class="col-md-6 phone-wrap opacity-null">
+                            <img src="images/download-left.png" alt="" class="phone-left">
+                            <img src="images/download-right.png" alt="" class="phone-right">
+                        </div>
+                        <div class="col-md-6 phone-text text-left opacity-null">
+                            <div class="row">
+                            	<div class="col-md-12 col-sm-6 col-xs-12">
+                            		<div class="fs-24">
+		                                The World's First Blockchain Based Highly Secure Instant Messenger
+		                            </div>
+		                            <div class="fs-24 download-title">
+		                                Core features of BCM
+		                            </div>
+		                            <div class="res-text-list">
+		                                <div class="res-text-item"><span></span>Internet of everything with openID</div>
+		                                <div class="res-text-item"><span></span>Blockchain-based end-to-end encryption</div>
+		                                <div class="res-text-item"><span></span>Excellent voice or video call quality</div>
+		                                <div class="res-text-item"><span></span>Supergroup support up to 100,000 members</div>
+		                                <div class="res-text-item"><span></span>Digital wallet support almost all cryptocurrencies</div>
+		                                <div class="res-text-item"><span></span>Secure payment with hardware wallet</div>
+		                            </div>
+                            	</div>
+                            	<div class="col-md-12 col-sm-6 col-xs-12">
+	                            	<div class="download-btn-wrap row mobile-hide">
+		                                <div class="col-md-5 col-xs-5 d-btn-item">
+		                                    <div class="down-wrap">
+		                                        <img src="images/iOS_moble.png" alt="" class="download-icon">
+		                                        <img src="images/ios_code.png" alt="" class="ercode-img">
+		                                    </div>
+		                                    <a href="https://www.bcm-im.com/setting/get_publish_url?mobile_type=0" class="download-link">
+									<img src="images/btn/download-btn.png" alt="" class="download-btn">
+									<img src="images/btn/download-btn-active.png" alt="" class="abs down-active">
+								</a>
+		                                </div>
+		                                <div class="col-md-5 col-xs-5 d-btn-item">
+		                                    <div class="down-wrap">
+		                                        <img src="images/android_mobile.png?v=1.0" alt="" class="download-icon">
+		                                        <img src="images/android_code.png" alt="" class="ercode-img">
+		                                    </div>
+		                                    <a href="https://www.bcm-im.com/setting/get_publish_url?mobile_type=1" class="download-link">
+									<img src="images/btn/download-btn.png" alt="" class="download-btn">
+									<img src="images/btn/download-btn-active.png" alt="" class="abs down-active">
+								</a>
+		                                </div>
+		                            </div>
+                            	</div>
+                            </div>
+                            <div class="p3-btn pc-hide">
+                                <a href="javascript:void(0);" id="mobile-link">
+						<img src="images/btn/download-btn.png" alt="" class="download-btn">
+					  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-item p4" style="padding-top: 40px;">
+                    <div>
+                        <span class="page-desc width60">BCM Hardware Wallet</span>
+                    </div>
+                    <div class="p4-wrap mobile-hide opacity-null">
+                        <img src="images/page1-p4-bg.png" alt="" class="p4-img-bg">
+                        <div class="p4-circle-wrap">
+                            <img src="images/page1-p4-circle-1.png" alt="" class="p4-circle p4-c1">
+                            <img src="images/page1-p4-circle-2.png" alt="" class="p4-circle p4-c2">
+                            <img src="images/page1-p4-circle-3.png" alt="" class="p4-circle p4-c3">
+                            <img src="images/page1-p4-circle-4.png" alt="" class="p4-circle p4-c4">
+                            <img src="images/page1-p4-circle-5.png" alt="" class="p4-circle p4-c5">
+                            <img src="images/page1-p4-circle-6.png" alt="" class="p4-circle p4-c6">
+                            <img src="images/page1-p4-circle-7.png" alt="" class="p4-circle p4-c7">
+                        </div>
+                        <div class="p4-cont">
+                            <div class="p4-item p4-item1">
+                                <div class="fs-16 p4-title">Portable</div>
+                                <div class="fs-13 p4-desc">
+                                    64mm long and 38mm width with the thick of 2.3mm, and weight 20g
+                                </div>
+                            </div>
+                            <div class="p4-item p4-item2">
+                                <div class="fs-16 p4-title">Super-long standby</div>
+                                <div class="fs-13 p4-desc">
+                                    Three months of standby time on a single charge
+                                </div>
+                            </div>
+                            <div class="p4-item p4-item3">
+                                <div class="fs-16 p4-title">Recoverable</div>
+                                <div class="fs-13 p4-desc">
+                                    Easily restore from mnemonic phrase
+                                </div>
+                            </div>
+                            <div class="p4-item p4-item4">
+                                <div class="fs-16 p4-title">Transaction Display and Confirmation</div>
+                                <div class="fs-13 p4-desc">
+                                    Check and confirm transactions on the display and confirm with using fingerprint buttons
+                                </div>
+                            </div>
+                            <div class="p4-item p4-item5">
+                                <div class="fs-16 p4-title">FIDO®CERTIFIED</div>
+                                <div class="fs-13 p4-desc">
+                                    Support fido U2F authenticator on google and GitHub
+                                </div>
+                            </div>
+                            <div class="p4-item p4-item6">
+                                <div class="fs-16 p4-title">Durable</div>
+                                <div class="fs-13 p4-desc">
+                                    Made of alloy,with lifespan more than 3 years
+                                </div>
+                            </div>
+                            <div class="p4-item p4-item7">
+                                <div class="fs-16 p4-title">State of the art security</div>
+                                <div class="fs-13 p4-desc">
+                                    Equiped with high level security chip which have CCEAL 6+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p4-wrap pc-hide text-left opacity-null">
+                        <img src="images/p4-mobile-bg.png" class="p4-mobile-bg">
+                        <div class="p4-mobile-right">
+                            <div class="p4-m-item">
+                                <img src="images/page1-p4-circle.png" class="p4-m-cicle">
+                                <div class="fs-20 p4-title">State of the art security</div>
+                                <div class="fs-14 p4-desc">
+                                    Equiped with high level security chip which have CCEAL 6+
+                                </div>
+                            </div>
+                            <div class="p4-m-item">
+                                <img src="images/page1-p4-circle.png" class="p4-m-cicle">
+                                <div class="fs-20 p4-title">Portable</div>
+                                <div class="fs-14 p4-desc">
+                                    64mm long and 38mm width with the thick of 2.3mm，and weight 20g
+                                </div>
+                            </div>
+                            <div class="p4-m-item">
+                                <img src="images/page1-p4-circle.png" class="p4-m-cicle">
+                                <div class="fs-20 p4-title">Super-long standby</div>
+                                <div class="fs-14 p4-desc">
+                                    Three months of standby time on a single charge
+                                </div>
+                            </div>
+                            <div class="p4-m-item">
+                                <img src="images/page1-p4-circle.png" class="p4-m-cicle">
+                                <div class="fs-20 p4-title">Recoverable</div>
+                                <div class="fs-14 p4-desc">
+                                    Easily restore from mnemonic phrase
+                                </div>
+                            </div>
+                            <div class="p4-m-item">
+                                <img src="images/page1-p4-circle.png" class="p4-m-cicle">
+                                <div class="fs-20 p4-title">Transaction Display and Confirmation</div>
+                                <div class="fs-14 p4-desc">
+                                    Check and confirm transactions on the display and confirm with using fingerprint buttons
+                                </div>
+                            </div>
+                            <div class="p4-m-item">
+                                <img src="images/page1-p4-circle.png" class="p4-m-cicle">
+                                <div class="fs-20 p4-title">FIDO®CERTIFIED</div>
+                                <div class="fs-14 p4-desc">
+                                    Support fido U2F authenticator on google and GitHub
+                                </div>
+                            </div>
+                            <div class="p4-m-item">
+                                <img src="images/page1-p4-circle.png" class="p4-m-cicle">
+                                <div class="fs-20 p4-title">Durable</div>
+                                <div class="fs-14 p4-desc">
+                                    Made of alloy,with lifespan more than 3 years
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p4-btn opacity-null">
+                        <a href="resource1.html">
+					<img src="images/btn/more-btn.png" alt="">
+					<img src="images/btn/more-btn-active.png" alt="" class="abs more-active">
+				</a>
+                    </div>
+                </div>
+                <div class="main-item p2 light-blue-bg">
+                    <div class="page-title">AME BLOCKCHAIN</div>
+                    <div>
+                        <span class="page-desc full-width">The Third Generation Blockchian</span>
+                    </div>
+                    <div class="p2-wrap row opacity-null">
+                        <div class="col-md-6 col-xs-6 res-item">
+                            <div class="page1-p2-image">
+                                <img src="images/page1-p2-img5.png" alt="" class="page1-p2-img1">
+                                <img src="images/page1-p2-img3.png" alt="" class="abs page1-p2-img1 p2-question swing always-move">
+                                <img src="images/page1-p2-img4.png" alt="" class="abs page1-p2-img1 p2-circle fadeInUpScale always-move">
+                            </div>
+                            <!-- <img src="images/page1-p2-img1.png" alt="" class="page1-p2-img1"> -->
+                            <div class="p2-cont">
+                                <div class="res-title fs-22">4 major problems with blockchain technology</div>
+                                <!-- <ul class="res-text-list fs-16">
+						<li>Low Efficiency</li>
+						<li>Poor Usability</li>
+						<li>Limited Scalability</li>
+						<li>Vulnerable to quantum attack</li>
+					  </ul> -->
+                                <div class="res-text-list">
+                                    <div class="res-text-item"><span></span>Low Efficiency</div>
+                                    <div class="res-text-item"><span></span>Poor Usability</div>
+                                    <div class="res-text-item"><span></span>Limited Scalability</div>
+                                    <div class="res-text-item"><span></span>Vulnerable to quantum attack</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 res-item" id="mobile-res">
+                            <div class="page1-p2-image">
+                                <img src="images/page1-p2-img6.png" alt="" class="page1-p2-img2">
+                                <img src="images/page1-p2-img7.png" alt="" class="abs page1-p2-img2 p2-2-circle">
+                                <img src="images/page1-p2-img8.png" alt="" class="abs page1-p2-img2 p2-2-light">
+                            </div>
+                            <div class="p2-cont">
+                                <div class="res-title fs-22">What can we provide?</div>
+                                <!-- <ul class="res-text-list fs-16">
+									<li>Blockchain native storage</li>
+									<li>Ultra-fast communication network</li>
+									<li>AI-powered self-governance</li>
+									<li>High security against quantum computers</li>
+								  </ul> -->
+                                <div class="res-text-list">
+                                    <div class="res-text-item"><span></span>Blockchain native storage</div>
+                                    <div class="res-text-item"><span></span>Ultra-fast communication network</div>
+                                    <div class="res-text-item"><span></span>AI-powered self-governance</div>
+                                    <div class="res-text-item"><span></span>High security against quantum computer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p2-btn opacity-null">
+                        <a href="resource2.html">
+					<img src="images/btn/more-btn.png" alt="">
+					<img src="images/btn/more-btn-active.png" alt="" class="abs more-active">
+				</a>
+                    </div>
+                </div>
+                <div class="main-item p5">
+                    <div class="page-title">CUBE</div>
+                    <div>
+                        <span class="page-desc">APP,Games</span>
+                    </div>
+                    <div class="p5-wrap row opacity-null">
+                        <div class="col-md-6 p5-wrap-left">
+                            <img src="images/page1-p5-img1.png" alt="" class="p5-img1">
+                            <img src="images/page1-p5-img3.png" alt="" class="p5-img2 p5-point justUp always-move">
+                            <img src="images/page1-p5-img4.png" alt="" class="p5-img2 p5-circle justUp always-move">
+                            <img src="images/page1-p5-img5.png" alt="" class="p5-img2 p5-big-circle">
+                        </div>
+                        <div class="col-md-6 p5-wrap-right">
+                            <div class="fs-32">
+                                Light app platform built on top of BCM
+                            </div>
+                            <div class="row">
+                            	<div class="col-md-12 col-sm-6">
+                            		<div class="fs-22 p5-title">
+		                                For Developers
+		                            </div>
+		                            <div class="res-text-list">
+		                                <div class="res-text-item"><span></span>Zero app development cost</div>
+		                                <div class="res-text-item"><span></span>Zero cut of in-app purchases</div>
+		                                <div class="res-text-item"><span></span>Effective overseas distribution</div>
+		                                <div class="res-text-item"><span></span>Cryptocurrency payment integration</div>
+		                            </div>
+                            	</div>
+                            	<div class="col-md-12 col-sm-6">
+	                            	<div class="fs-22 p5-title">
+		                                For Users
+		                            </div>
+		                            <div class="res-text-list">
+		                                <div class="res-text-item"><span></span>Abundant games and apps</div>
+		                                <div class="res-text-item"><span></span>Making money with games</div>
+		                            </div>
+                            	</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-item p6">
+                    <div class="page-title">TOKEN</div>
+                    <div class="p6-wrap row mobile-hide opacity-null">
+                        <div class="col-md-5 col-sm-5 text-right p6-wrap-left">
+                            <div class="fs-30 p6-title p6-title2">Obtain Tokens</div>
+                            <div class="fs-22 p6-desc res-text-item"><span></span>Currency exchanges</div>
+                            <div class="fs-22 p6-desc res-text-item"><span></span>Participate in VC/PE</div>
+                            <div class="fs-22 p6-desc res-text-item"><span></span>Be a blockchain node</div>
+                            <div class="fs-22 p6-desc res-text-item"><span></span>Be a developer of the Cube</div>
+                        </div>
+                        <div class="col-md-7 col-sm-7 p6-wrap-right">
+                            <div class="p6-img-box">
+                                <img src="images/page1-p6-img7.png" alt="" class="p6-img-bg">
+                                <img src="images/page1-p6-img6.png" alt="" class="abs p6-shine">
+                                <img src="images/page1-p6-img3.png" alt="" class="p6-block p6-block-2 p6-fade-1">
+                                <img src="images/page1-p6-img4.png" alt="" class="p6-block p6-block-3 p6-fade-4">
+                                <img src="images/page1-p6-img5.png" alt="" class="p6-block p6-block-4 p6-fade-3">
+                                <img src="images/page1-p6-img2.png" alt="" class="p6-block p6-block-1 p6-fade-2">
+                            </div>
+                            <div class="p6-img-info row">
+                                <div class="col-md-4 p6-info-left">
+                                    <div class="p6-info">
+                                        <img src="images/page1-p6-orange.png" alt="">
+                                        <span class="fs-16 p6-info-title">VC/PE</span>
+                                    </div>
+                                    <div class="p6-info">
+                                        <img src="images/page1-p6-purple.png" alt="">
+                                        <span class="fs-16 p6-info-title">Group Rewards</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 p6-info-right">
+                                    <div class="p6-info">
+                                        <img src="images/page1-p6-blue.png" alt="">
+                                        <span class="fs-16 p6-info-title">Foundation</span>
+                                    </div>
+                                    <div class="p6-info">
+                                        <img src="images/page1-p6-yellow.png" alt="">
+                                        <span class="fs-16 p6-info-title">Research & Development Fees</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p6-wrap row pc-hide opacity-null">
+                        <div class="col-md-7 col-xs-12 p6-wrap-right">
+                            <div class="p6-img-box">
+                                <img src="images/page1-p6-img7.png" alt="" class="p6-img-bg">
+                                <img src="images/page1-p6-img6.png?v=1.2" alt="" class="abs p6-shine">
+                                <img src="images/page1-p6-img3.png" alt="" class="p6-block p6-block-2 p6-fade-1">
+                                <img src="images/page1-p6-img4.png" alt="" class="p6-block p6-block-3 p6-fade-4">
+                                <img src="images/page1-p6-img5.png" alt="" class="p6-block p6-block-4 p6-fade-3">
+                                <img src="images/page1-p6-img2.png" alt="" class="p6-block p6-block-1 p6-fade-2">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 text-center p6-wrap-left padding-0">
+                            <div class="col-xs-6 text-right">
+                                <div class="p6-info">
+                                    <span class="fs-16">VC/PE</span>
+                                    <img src="images/page1-p6-orange.png" alt="">
+                                </div>
+                                <div class="p6-info">
+                                    <span class="fs-16">Group Rewards</span>
+                                    <img src="images/page1-p6-purple.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-6 text-left">
+                                <div class="p6-info">
+                                    <img src="images/page1-p6-blue.png" alt="">
+                                    <span class="fs-16">Foundation</span>
+                                </div>
+                                <div class="p6-info">
+                                    <img src="images/page1-p6-yellow.png" alt="">
+                                    <span class="fs-16" style="display: inline-block;vertical-align: top;width: 80%;text-align: left;">Research & Developemnt Fees</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 text-center" style="margin-top: 10%">
+                            <div class="fs-24 p6-title p6-title2">Obtain Tokens</div>
+                            <div class="fs-16 p6-desc res-text-item"><span></span>Currency exchanges</div>
+                            <div class="fs-16 p6-desc res-text-item"><span></span>Participate in VC/PE</div>
+                            <div class="fs-16 p6-desc res-text-item"><span></span>Be a blockchain node</div>
+                            <div class="fs-16 p6-desc res-text-item"><span></span>Be a developer of the Cube</div>
+                        </div>
+                    </div>
+                    <div class="p6-btn opacity-null">
+                        <a href="javascript:void(0);" onclick="openPopup()">
+							<img src="images/btn/more-btn.png" alt="">
+							<img src="images/btn/more-btn-active.png" alt="" class="abs more-active">
+						</a>
+                    </div>
+                </div>
+                <div class="main-item p7 light-blue-bg">
+                    <div class="page-title">ROADMAP</div>
+                    <div class="swiper-container road-map-container mobile-hide opacity-null">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide road-slide"><img src="images/page1-roadmap-1.png?v=1.0" alt=""></div>
+                            <div class="swiper-slide road-slide"><img src="images/page1-roadmap-2.png?v=1.0" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination road-map-pagination"></div>
+                        <div class="swiper-button-prev road-map-prev"><img src="images/page1-arrow-left.png" alt=""></div>
+                        <div class="swiper-button-next road-map-next"><img src="images/page1-arrow-right.png" alt=""></div>
+                    </div>
+                    <div class="p7-mobile-wrap pc-hide opacity-null">
+                        <img src="images/page1-roadmap-ver.png?v=1.0" alt="" class="page1-p7-img1">
+                    </div>
+                </div>
+                <div class="main-item p10 light-blue-bg">
+                    <div class="page-title">CONTACT US</div>
+                    <div class="link-list row">
+                        <div class="col-md-4 col-xs-4 link-item">
+                            <a target="_blank" href="https://twitter.com/blockchainim" class="friend-link">
+                                <div class="icon-circle">
+                                    <img src="images/icon/twitter_grey.png" alt="" class="icon-friend">
+                                </div>
+                                <div class="fs-16">Twitter</div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-4 link-item">
+                            <a target="_blank" href="https://www.facebook.com/BCM-453003181840941/" class="friend-link">
+                                <div class="icon-circle">
+                                    <img src="images/icon/facebook_grey.png" alt="" class="icon-friend">
+                                </div>
+                                <div class="fs-16">Facebook</div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-4 link-item">
+                            <a target="_blank" href="https://www.youtube.com/channel/UCpSj9oPK30SzebnryB1iYlA" class="friend-link">
+                                <div class="icon-circle">
+                                    <img src="images/icon/youtube_grey.png" alt="" class="icon-friend">
+                                </div>
+                                <div class="fs-16">YouTube</div>
+                            </a>
+                        </div>
+                        <!-- <div class="col-md-3 col-xs-3 link-item">
+					<a href="" class="friend-link">
+						<div class="icon-circle">
+							<img src="images/icon/github_grey.png" alt="" class="icon-friend">
+						</div>
+						<div class="fs-16">GitHub</div>
+					</a>
+				</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="x-popup-fixed hide" style="background-image:url(images/p1-bg.png);">
+        <span class="icon-arrow pc-hide" onclick="closePopup()">
+				<img src="images/arrow-back.png" alt="">
+			</span>
+        <span class="icon-close mobile-hide" onclick="closePopup()">
+				<img src="images/icon/icon-close.png">
+			</span>
+        <div class="page-title">Token circulation</div>
+        <div class="x-popup-wrap row">
+            <div class="col-md-4 x-popup-item">
+                <div class="x-popup-title fs-16">Token Supply</div>
+                <div class="res-text-list">
+                    <div class="res-text-item"><span></span>Mining of the AME nodes</div>
+                    <div class="res-text-item"><span></span>Rewards from the services of the AME nodes</div>
+                </div>
+            </div>
+            <div class="col-md-4 x-popup-item">
+                <div class="x-popup-title fs-16">Token Demands</div>
+                <div class="res-text-list">
+                    <div class="res-text-item"><span></span>Deposit of the AME blockchain nodes</div>
+                    <div class="res-text-item"><span></span>Token demands from heavy user in the Cube</div>
+                </div>
+            </div>
+            <div class="col-md-4 x-popup-item">
+                <div class="x-popup-title fs-16">Foundation Pool</div>
+                <div class="res-text-list">
+                    <div class="res-text-item"><span></span>Currency pool consist of tokens and USD</div>
+                    <div class="res-text-item"><span></span>Stabilized value of the tokens by selling and buying them inthe market place</div>
+                </div>
+            </div>
+        </div>
+        <div class="x-popup-img-wrap">
+            <img src="images/popup-img.png" class="x-popup-img">
+        </div>
+    </div>
+    <!-- <div class="x-popup-fixed2 x-popup-what hide">
+		<span class="icon-arrow"  onclick="closePopup2()">
+			<img src="images/arrow-back.png" alt="">
+		</span>
+		<div class="page-title">What is ABC ?</div>
+		<div class="x-pf2-wrap">
+			ABC, which aims to provide security, encrypted, decentralized Instant Messenger services, and app/game development platform based on the IM, is an organic ecosystem with three layers. The ecosystem consist of AME blockchain, Blockchain Messenger (BCM), and Cube platform. The AME blockchain, which located on the underlying layer, is the foundation of the ecosystem, and the provider of blockchain services. BCM, which is the world first blockchian based IM, offers the most security, encrypted message service. Cube, which is built on BCM, is an applet platform that can support both apps and games. Besides, an easy-to-use development tool is integrated for the developers, which can realized rapid accessing to Cube with nearly zero cost. Under the mechanism of economic system, the participants perform smoothly with the proper token rewards and precise financial policy. In this way, the whole ecosystem can run steadily and robustly.
+		</div>
+	</div> -->
+    <div class="soon-fixed hide">
+        <span class="icon-close" onclick="closeSoon()"><img src="images/icon/icon-close.png" alt=""></span>
+        <span class="fs-24 soon-text">Coming Soon...</span>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/resLoader.js"></script>
+    <script src="js/common.js?v=9.1"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+    if (isMobile() == 1) { //安卓
+        $("#mobile-link").attr('href', 'https://www.bcm-im.com/setting/get_publish_url?mobile_type=1')
+    } else if (isMobile() == 0) { //苹果
+        $("#mobile-link").attr('href', 'itms-services://?action=download-manifest&url=https://bcm-im.com/iOS/manifest.plist')
+    }
+    //设置一个标志位 第一屏动画是否显示完成 0->未完成 2->2秒后完成
+    var anit_done = 0;
+    //定义一个获取当前屏幕宽度
+    var win_width = $(window).width();
+    var imgArray = [];
+    var timestamp = new Date().getTime();
+    // $('.anit-num').attr('src', 'images/animate-num-loop.gif?v=' + timestamp);
+    $(".p1-wrap img").each(function(index, vlaue) {
+        imgArray.push($(this).attr("src"))
+    })
+    //console.log(imgArray)
+    var loader = new resLoader({
+        resources: imgArray,
+        onStart: function(total) {
+            //console.log('start:'+total);
+        },
+        onProgress: function(current, total) {
+            var percent = parseInt(current / total * 100);
+            //console.log(percent);
+            if (percent === 100) {
+                // var timer = setTimeout(function(){
+                // 	$(".load-wrap").hide();
+                // 	page_start()
+                // 	clearTimeout(timer);
+                // },500)
+            }
+        },
+        onComplete: function(total) {
+            console.log('加载完毕:' + total + '个资源');
+            // var timer = setTimeout(function(){
+            	// 在加载完成的函数事件里添加事件
+            $('.anit-num').attr('src', 'images/animate-num-loop.gif?v=' + timestamp);
+            $('.anit-num').addClass('fadeInPage5');
+            $('.anit-m4').addClass('fadeInPage6');
+            $('.anit-m3').addClass('fadeInPage5');
+            $('.anit-m2').addClass('fadeInPage7');
+            $('.anit-m1').addClass('fadeInPage8');
+            $('.p1 .page-title').addClass('fadeInPage1');
+            // },0)
+            var timer = setTimeout(function() {
+                // 金字塔动画
+                $("#hover-mask-top").hover(function() {
+                    $('.p1-w1').addClass('fadeInWin1');
+                }, function() {
+                    $('.p1-w1').removeClass('fadeInWin1')
+                })
+                $("#hover-mask-middle").hover(function() {
+                    $('.p1-w3').addClass('fadeInWin2')
+                }, function() {
+                    $('.p1-w3').removeClass('fadeInWin2')
+                })
+                $("#hover-mask-bottom").hover(function() {
+                    $('.p1-w2').addClass('fadeInWin3');
+                    //这个gif没有淡入的动画 适合鼠标移动上去就立马显示出来
+                    // $('.anit-num').attr('src', 'images/animate-num3.gif?v=' + timestamp);
+                }, function() {
+                    $('.p1-w2').removeClass('fadeInWin3');
+                    //这个gif是单独帧的动画 适合鼠标已开立马关掉动画
+                    // $('.anit-num').attr('src', 'images/animate-num4.gif?v=' + timestamp);
+                })
+                //显示动画加载完成
+                anit_done = 2;
+            }, 2000)
+
+        }
+    });
+    loader.start();
+    var mySwiper2 = new Swiper('.road-map-container', {
+        pagination: {
+            el: '.road-map-pagination',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+    //节流执行 间隙100ms
+    //滚动触发
+    window.onscroll = throttle(scrollFnc,100);
+    //大小改变触发
+    window.onresize = throttle(resizeFnc,100);
+    function gotoDownLoad() {
+        var d_top = $('#download').offset().top;
+        $('html,body').animate({
+            'scrollTop': d_top
+        }, 1000)
+    }
+    function scrollFnc(){
+    	var top = $(window).scrollTop()
+        var p3_top = $('.p3').offset().top - 100;
+        var p4_top = $('.p4').offset().top - 100;
+        var p2_top = $('.p2').offset().top - 100;
+        var p5_top = $('.p5').offset().top - 100;
+        var p6_top = $('.p6').offset().top - 100;
+        var p7_top = $('.p7').offset().top - 100;
+        var p2_mobile_top = $('#mobile-res').offset().top - 100;
+        if (top >= 100) {
+            $('.x-nav-fixed').removeClass('light-nav').addClass('deep-nav')
+        } else {
+            $('.x-nav-fixed').addClass('light-nav').removeClass('deep-nav')
+        }
+
+        if (top >= p3_top) {
+            $('.p3 .opacity-null').addClass('scrollFadeInUp')
+        }
+
+        if (top >= p4_top - 100) {
+            $('.p4 .opacity-null').addClass('scrollFadeInUp')
+        }
+
+        if (top >= p2_top - 100) {
+            $('.p2 .opacity-null').addClass('scrollFadeInUp')
+        }
+
+        if (top >= p5_top - 100) {
+            $('.p5 .opacity-null').addClass('scrollFadeInUp')
+        }
+
+        if (top >= p6_top - 100) {
+            $('.p6 .opacity-null').addClass('scrollFadeInUp')
+        }
+
+        if (top >= p7_top - 100) {
+            $('.p7 .opacity-null').addClass('scrollFadeInUp')
+        }
+
+        // if(top>=p4_top){
+        // 	$('.phone-wrap').addClass('scrollFadeInUp')
+        // }
+        if (top >= p2_top) {
+            $('.p2-question').addClass('swing')
+            $('.p2-circle').addClass('fadeInUpScale')
+            if (isPC()) { //PC
+                $('.p2-2-circle,.p2-2-light').addClass('fadeInUpScale')
+            }
+        } else {
+            if (isPC()) {
+                $('.p2-2-circle,.p2-2-light').removeClass('fadeInUpScale')
+            }
+        }
+
+        if (top >= p6_top) {
+            $('.p6-shine').addClass('fadeInPage1')
+            $('.p6-fade-1').addClass('fadeP6-1')
+            $('.p6-fade-2').addClass('fadeP6-2')
+            $('.p6-fade-3').addClass('fadeP6-3')
+            $('.p6-fade-4').addClass('fadeP6-4')
+        } else {
+            $('.p6-shine').removeClass('fadeInPage1')
+            $('.p6-fade-1').removeClass('fadeP6-1')
+            $('.p6-fade-2').removeClass('fadeP6-2')
+            $('.p6-fade-3').removeClass('fadeP6-3')
+            $('.p6-fade-4').removeClass('fadeP6-4')
+        }
+
+        if (!isPC() && top >= p2_mobile_top) { //mobile
+            console.log('mobile')
+            $('.p2-2-circle,.p2-2-light').addClass('fadeInUpScale')
+        } else if (!isPC() && top < p2_mobile_top) {
+            $('.p2-2-circle,.p2-2-light').removeClass('fadeInUpScale')
+        }
+    }
+    function resizeFnc(){
+    	var timerResize = null;
+        win_width = $(window).width();
+        // 获取出来显示751和css媒体查询的768是相等的
+        //所以这里采用和751作为条件判断 如有兼容性问题再做调整
+        if (win_width <=751) {
+            if (anit_done != 2) {
+        	    //若是初始化加载时等待金字塔动画完成之后再进行文字动画加载
+                var timerResize = setTimeout(function() {
+                    $('.p1-w1').addClass('fadeInWin1');
+                    $('.p1-w3').addClass('fadeInWin2');
+                    $('.p1-w2').addClass('fadeInWin3');
+                }, 4000)
+            } else {
+        	    //若是已经加载好然后是缩放窗口进行的改变则无需等待
+        	    //这里后期应当和上面重复的部分硬性封装一个函数进行调用
+                $('.p1-w1').addClass('fadeInWin1');
+                $('.p1-w3').addClass('fadeInWin2');
+                $('.p1-w2').addClass('fadeInWin3');
+            }
+
+        } else {
+            clearTimeout(timerResize);
+            $('.p1-w1').removeClass('fadeInWin1');
+            $('.p1-w3').removeClass('fadeInWin2');
+            $('.p1-w2').removeClass('fadeInWin3');
+        }
+    }
+    // 写一个节流函数 封装onscroll事件和onresize事件
+    function throttle(func,delay){
+    	// 维护一个定时器
+    	var timer_de = null;
+    	var startTime = Date.now();
+    	return function(){
+    		var curTime = Date.now();
+    		var remaining = delay - (curTime - startTime);
+    		// 维护this指向
+    		var context = this;
+    		var args = arguments;
+    		clearTimeout(timer_de);
+    		if(remaining<=0){
+    			func.apply(context,args);
+    			startTime = Date.now();
+    		}else{
+    			timer_de = setTimeout(func,remaining);
+    		}
+    	}
+    }
+    // 先默认执行一下该事件，窗口改变后可再次执行。
+    resizeFnc();
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Beta Version Download</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Cache-Control" content="no-store" />
+    	<meta name="renderer" content="webkit">
+    	<meta name="keywords" content="BCM,blockchain,messenger,im，freedom,区块链,通讯">
+    	<meta name="Description" content="The first blockchain messenger, born for the freedom of communication.">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mobile.css" />
+	</head>
+
+	<body>
+		<header></header>
+		<section>
+			<div class="main-item p3" id="download">
+				<!--以下样式使文字垂直居中-->
+				<div class="page-title p3-title" style="display: flex;align-items: center;justify-content: center;">
+					BCM
+					<small class="fs-30">&nbsp;&nbsp;&nbsp;(Beta Version)</small>
+				</div>
+				<div>
+					<span class="page-desc">Blockchain Messenger</span>
+				</div>
+				<div class="p3-wrap row">
+					<div class="col-md-6 phone-wrap scrollFadeInUp">
+						<img src="../images/download-left.png" alt="" class="phone-left">
+						<img src="../images/download-right.png" alt="" class="phone-right">
+					</div>
+					<div class="col-md-6 phone-text text-left">
+						<div class="row">
+							<div class="col-md-12 col-sm-6 col-xs-12">
+								<div class="fs-24">
+									The World's First Blockchain Based Highly Secure Instant Messenger
+								</div>
+								<div class="fs-24 download-title">
+									<span style="vertical-align: middle;">Core features of BCM</span>
+									<span class="trial-icon"><img src="../images/mobile-3.png" width="15"></span>
+								</div>
+								<div class="res-text-list">
+									<div class="res-text-item"><span></span>Internet of everything with openID</div>
+									<div class="res-text-item"><span></span>Blockchain-based end-to-end encryption</div>
+									<div class="res-text-item"><span></span>Excellent voice or video call quality</div>
+									<div class="res-text-item"><span></span>Supergroup support up to 100,000 members</div>
+									<div class="res-text-item"><span></span>Digital wallet support almost all cryptocurrencies</div>
+									<div class="res-text-item"><span></span>Secure payment with hardware wallet</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12">
+								<div class="download-btn-wrap row mobile-hide">
+									<div class="col-md-5 col-xs-5 d-btn-item">
+										<div class="down-wrap">
+											<img src="../images/iOS_moble.png" alt="" class="download-icon">
+											<img src="../images/ios_code.png" alt="" class="ercode-img">
+										</div>
+										<a href="https://www.bcm-im.com/setting/get_publish_url?mobile_type=0" class="download-link">
+											<img src="../images/btn/download-btn.png" alt="" class="download-btn">
+											<img src="../images/btn/download-btn-active.png" alt="" class="abs down-active">
+										</a>
+									</div>
+									<div class="col-md-5 col-xs-5 d-btn-item">
+										<div class="down-wrap">
+											<img src="../images/android_mobile.png?v=1.0" alt="" class="download-icon">
+											<img src="../images/android_code.png" alt="" class="ercode-img">
+										</div>
+											<!--<a href="https://www.bcm-im.com/setting/get_publish_url?mobile_type=1" class="download-link">-->
+											<!--Beta version download link-->
+											<a href="https://ameim.bs2dl.yy.com/downloads/android_alpha_im.apk" class="download-link">
+											<img src="../images/btn/download-btn.png" alt="" class="download-btn">
+											<img src="../images/btn/download-btn-active.png" alt="" class="abs down-active">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p3-btn pc-hide">
+							<a href="javascript:void(0);" id="mobile-link">
+								<img src="../images/btn/download-btn.png" alt="" class="download-btn">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer></footer>
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script>
+			console.log($(window).width());
+			if(isMobile() == 1) { //安卓
+				//console.log("I am android download link");
+				//Android beta version download link
+				$("#mobile-link").attr('href', 'https://ameim.bs2dl.yy.com/downloads/android_alpha_im.apk')
+			} else if(isMobile() == 0) { //苹果
+				$("#mobile-link").attr('href', 'itms-services://?action=download-manifest&url=https://bcm-im.com/iOS/manifest.plist')
+			}
+		</script>
+	</body>
+
+</html>

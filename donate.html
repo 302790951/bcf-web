@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BCM Donate</title>
+    <base href="."/>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    
+    <meta name="keywords" content=""/>
+    
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+    <meta http-equiv="expires" content="0">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/libs.css?v=1499154183394">
+    <link rel="stylesheet" href="styles/common.css?v=1499154183394">
+    <script src="scripts/libs.js?v=1499154183394"></script>
+</head>
+<body style="background-color:#F2F3F4;">
+    <div class="container">
+        <div class="row">
+            <img style="width:100%; height:auto; object-fit:cover;" src="./images/donate.png" />
+        </div>
+        <div style="margin:20px;">    
+            <div class="row" >
+                <div style="margin-bottom:40px;">
+                    <strong>BCM is still growing, you can choose either way below to make a donation</strong>
+                </div>
+                <div>
+                    <strong style="color:#616161;">Bitcoin Address</strong>
+                </div>
+            </div>
+            <div class="row" style="background-color:#ffffff; margin-bottom:30px;margin-top:10px;">
+                <div>
+                    <div class="col-xs-12 col-sm-offset-0 col-xs-8" style="padding-left:20px;padding-top:12px;">
+                    <span id="btc_address" style="color:#000;">1NuMcmq4g5Hia33X yJs4SxjPXpsvA7Mjqt</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-offset-0 col-xs-4" style="padding-top:20px;padding-bottom:20px;">
+                        <input id="btn_copy" type="button" onclick="copy()" style="background-color:#379BFF; width:80px;height:24px;border-radius:24px;border:0px;color:#fff;font-weight:bold;" value="COPY"
+                        data-toggle="popover" data-placement="left" data-content="Copy Success"/>
+                    </div>
+                </div>
+           </div>
+           <div class="row">
+                <strong style="color:#616161;">QR Code</strong><br/>
+                <img style="width:100%; height:auto; margin-top:10px;" src="./images/donate_bitcoin_address_qrcode.png"/>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+function copy() {
+    var copyText = document.getElementById("btc_address");
+    var textArea = document.createElement("textarea");
+    textArea.value = copyText.textContent.replace(/\s+/g,"");
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("Copy");
+    textArea.remove();
+    $('#btn_copy').popover('show');
+    setTimeout(function(){
+        $('#btn_copy').popover('hide');
+    },2000); 
+}
+</script>
+</html>

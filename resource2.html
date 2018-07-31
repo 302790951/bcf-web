@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/common.js?v=1.2"></script>
+	<title>RESOURCE2</title>	
+</head>
+<body>
+	<div class="mobile-soon hide">Comming Soon</div>
+	<div class="mobile-nav hide-nav">
+		<span class="mobile-nav-close" onclick="closeNav()"><img src="images/icon/icon-close.png"></span>
+		<ul class="mobile-list">
+			<li class="mobile-nav-li">
+				<a href="index.html" class="mobile-nav-link"><i>-</i>HOME</a>
+			</li>
+			<li class="mobile-nav-li">
+				<a href="javascript:void(0);" class="mobile-nav-link" onclick="showDrop(this)"><i>-</i>RESOURCE</a>
+				<ul class="mobile-nav-ul">
+					<li><a href="javascript:void(0);" onclick="openSoon()" class="mobile-nav-link">BRIEF</a></li>
+					<li><a href="javascript:void(0);" onclick="openSoon()" class="mobile-nav-link active">WHITEPAPER</a></li>
+				</ul>
+			</li>
+			<li class="mobile-nav-li">
+				<a href="news.html" class="mobile-nav-link"><i>-</i>NEWS</a>
+			</li>
+		</ul>
+	</div>
+	<div class="x-container">
+		<div class="black-mask hide"></div>
+		<div class="x-nav-fixed">
+			<div class="x-nav clearfix">
+				<div class="pull-left">
+					<a href="index.html" class="fs-36 fwb">BCM</a>
+				</div>
+				<div class="pull-right">
+					<ul class="x-nav-list">
+						<li class="x-nav-li"><a href="index.html" class="x-navLink">HOME</a></li>
+						<li class="x-nav-li dropDown">
+							<a href="javascript:void(0);" class="x-navLink active">RESOURCE</a>
+							<ul class="x-nav-ul">
+								<li><a href="javascript:void(0);" onclick="openSoon()">BRIEF</a></li>
+								<li><a href="javascript:void(0);" onclick="openSoon()" class="active">WHITEPAPER</a></li>
+							</ul>
+						</li>
+						<li class="x-nav-li"><a href="index.html#download" class="x-navLink">DOWNLOAD</a></li>
+						<li class="x-nav-li"><a href="news.html" class="x-navLink">NEWS</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-title">
+			<span class="menu-btn" onclick="openNav()"><img src="images/menu-btn.png" alt=""></span>
+			<span class="fs-30"><a href="index.html">BCM</a></span>
+		</div>
+		<div class="new-container">
+			<div class="x-container-wrap page3-block-1" style="background-image: url(images/page3-bg1.png);">
+				<div class="container-middle">
+					<div>
+						<span class="page-desc">ABNN —— AME Bloackchain Native Network</span>
+					</div>
+					<div class="res-text-list">
+						<div class="res-text-item"><span></span>Innovative decentralized 2.1 ring topology</div>
+						<div class="res-text-item"><span></span>Ultra-fast broadcasting</div>
+						<div class="res-text-item"><span></span>Dynamic scaling —— AI based management</div>
+						<div class="res-text-item"><span></span>Infinite DHT sharding</div>
+					</div>
+					<div class="page3-img-row row">
+						<div class="col-md-6 col-xs-12 page3-img-item">
+							<img src="images/page3-img1.png" alt="" class="page3-img1">
+						</div>
+						<div class="col-md-6 col-xs-12 page3-img-item">
+							<img src="images/page3-img2.png?v=1.0" alt="" class="page3-img2">
+						</div>
+					</div>
+					<div>
+						<img src="images/page3-img3.png" alt="" class="page3-img3">
+					</div>
+				</div>
+			</div>
+			<div class="x-container-wrap page3-block-2 light-blue-bg">
+				<div class="container-middle">
+					<div>
+						<span class="page-desc">ABNS —— AME Bloackchain Native Storage</span>
+					</div>
+					<div class="res-text-list">
+						<div class="res-text-item"><span></span>Read-optimized：Native for blockchain</div>
+						<div class="res-text-item"><span></span>Latch-free read/write access</div>
+						<div class="res-text-item"><span></span>Low write amplification/GC cost</div>
+						<div class="res-text-item"><span></span>Full ACID and robust</div>
+						<div class="res-text-item"><span></span>Efficient analytics-ready</div>
+					</div>
+					<div>
+						<img src="images/page3-img4.png" alt="" class="page3-img4">
+					</div>
+				</div>
+			</div>
+			<div class="x-container-wrap page3-block-3">
+				<div class="container-middle">
+					<div>
+						<span class="page-desc">AI</span>
+					</div>
+					<div class="res-text-list">
+						<div class="res-text-item"><span></span>Self-management of transaction fee</div>
+						<div class="res-text-item"><span></span>Evaluating Ring 0, Ring 1 servers and Temporary Workers</div>
+						<div class="res-text-item"><span></span>Dynamic ring scaling</div>
+						<div class="res-text-item"><span></span>System Anomaly Detection</div> 
+					</div>
+					<div class="mobile-hide">
+						<img src="images/page3-img5.png" alt="" class="page3-img5">
+					</div>
+					<div class="pc-hide">
+						<img src="images/page3-img5-m.png?v=2.0" alt="" class="page3-img5-m">
+					</div>
+				</div>
+			</div>
+			<div class="x-container-wrap page3-block-4 light-blue-bg">
+				<div class="container-middle">
+					<div>
+						<span class="page-desc">Prevent AME from quantum computation attack</span>
+					</div>
+					<div class="res-text-list">
+						<div class="res-text-item"><span></span>Compatibility of existing asymmetric encryption system</div>
+						<div class="res-text-item"><span></span>highly efficiency encryption , smaller key , suitable for blockchain storage</div>
+						<div class="res-text-item"><span></span>High security, effective to the threaten of future quantum computing power</div> 
+					</div>
+					<div>
+						<img src="images/page3-img6.png" alt="" class="page3-img6">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="soon-fixed hide">
+		<span class="icon-close" onclick="closeSoon()"><img src="images/icon/icon-close.png" alt=""></span>
+		<span class="fs-24 soon-text">Coming Soon</span>
+	</div>
+<script>
+window.onscroll = function() {
+	var top = $(window).scrollTop()
+	if(top>=104){
+		$('.x-nav-fixed').removeClass('light-nav').addClass('deep-nav')
+	}else{
+		$('.x-nav-fixed').addClass('light-nav').removeClass('deep-nav')
+	}
+}
+</script>
+</body>
+</html>

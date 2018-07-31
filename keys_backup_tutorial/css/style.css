@@ -1,0 +1,86 @@
+/*引入字体文件*/
+
+@font-face {
+    font-family: 'SFProText-Regular';
+    src: url('../fonts/SF-Pro-Text-Regular.otf');
+}
+@font-face{
+    font-family: 'SFProText-Medium';
+    src: url('../fonts/SF-Pro-Text-Medium.otf');
+}
+
+.wrap {
+    margin: 15px 0 0;
+}
+
+.sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec .ol-num {
+    color: #A6B3BF;
+    font-size: 48px;
+}
+
+.sec .title-content {
+    padding: 3.5% 10px;
+}
+
+.sec .p-dec {
+    padding: 0 10px;
+}
+
+.sec .title-p,
+.sec .title-dec {
+    color: #303030;
+    line-height: 21px;
+}
+.sec .title-p{
+	font-size: 16px;
+	font-family: 'SFProText-Medium';
+}
+.sec .title-dec {
+	font-family: 'SFProText-Regular';
+     font-size: 15px;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.img-img {
+    width: 100%;
+}
+
+hr {
+    /*padding-bottom: 20px;*/
+    width: 83%;
+    border-bottom: 1px solid #919191;
+}
+
+.title-QA {
+    font-size: 17px;
+    color: #616161;
+    padding: 0 20px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.question,
+.anwser {
+    font-family: 'SFProText-Regular';
+    font-size: 14px;
+    color: #919191;
+    line-height: 21px;
+    padding: 0 20px;
+}
+
+.anwser {
+    margin-bottom: 20px;
+}
+
+.blod{
+	font-weight: bold;
+}

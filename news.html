@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<title>NEWS</title>
+</head>
+<body>
+	<div class="mobile-soon hide">Comming Soon</div>
+	<div class="mobile-nav hide-nav">
+		<span class="mobile-nav-close" onclick="closeNav()"><img src="images/icon/icon-close.png"></span>
+		<ul class="mobile-list">
+			<li class="mobile-nav-li">
+				<a href="index.html" class="mobile-nav-link"><i>-</i>HOME</a>
+			</li>
+			<li class="mobile-nav-li">
+				<a href="javascript:void(0);" class="mobile-nav-link" onclick="showDrop(this)"><i>-</i>RESOURCE</a>
+				<ul class="mobile-nav-ul">
+					<li><a href="javascript:void(0);" onclick="openSoon()" class="mobile-nav-link">BRIEF</a></li>
+					<li><a href="javascript:void(0);" onclick="openSoon()" class="mobile-nav-link">WHITEPAPER</a></li>
+				</ul>
+			</li>
+			<li class="mobile-nav-li">
+				<a href="news.html" class="mobile-nav-link active"><i>-</i>NEWS</a>
+			</li>
+		</ul>
+	</div>
+	<div class="x-container">
+		<div class="black-mask hide"></div>
+		<div class="x-nav-fixed deep-nav">
+			<div class="x-nav clearfix">
+				<div class="pull-left">
+					<a href="index.html" class="fs-36 fwb">BCM</a>
+				</div>
+				<div class="pull-right">
+					<ul class="x-nav-list">
+						<li class="x-nav-li"><a href="index.html" class="x-navLink">HOME</a></li>
+						<li class="x-nav-li dropDown">
+							<a href="javascript:void(0);" class="x-navLink">RESOURCE</a>
+							<ul class="x-nav-ul">
+								<li><a href="javascript:void(0);" onclick="openSoon()">BRIEF</a></li>
+								<li><a href="javascript:void(0);" onclick="openSoon()">WHITEPAPER</a></li>
+							</ul>
+						</li>
+						<li class="x-nav-li"><a href="index.html#download" class="x-navLink">DOWNLOAD</a></li>
+						<li class="x-nav-li"><a href="news.html" class="x-navLink active">NEWS</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-title">
+			<span class="menu-btn" onclick="openNav()"><img src="images/menu-btn.png" alt=""></span>
+			<span class="fs-30"><a href="index.html">BCM</a></span>
+		</div>
+		<div class="new-container">
+			<div class="x-container-wrap">
+				<div class="container-middle">
+					<div class="news-list">
+						<div class="row news-item">
+							<div class="col-md-6">
+								<div class="news-video-wrap">
+									<video poster="images/3.png" loop width="100%" height="100%" id="video-1" src="https://ameim.bs2dl.yy.com/videos/bcm.mp4" style="object-fit:fill">
+		      							Sorry, your browser doesn't support embedded videos.
+									</video>
+									<div class="video_play_icon"></div>
+									<!-- <img class="video_play_icon" src="images/icon/play_nor.png"> -->
+								</div>
+								<div class="news-time">
+									2018-07-15
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="news-title fs-24"> BCM<br/>
+								<span class="fs-20">Born for Freedom of Communication<span>
+								</div>
+								<div class="news-time2 fs-16 pc-hide">
+									2018-07-15
+								</div>
+								<div class="news-desc fs-14">
+									BCM removes registration barriers to communication, protects message from prying eyes and eliminates video call delay. All of these will reshape the foundation of internet. BCM, the blockchain messenger, endows the spiritual strength to the freedom of internet.
+								</div>
+							</div>
+						</div>
+						<div class="row news-item">
+							<div class="col-md-6">
+								<div class="news-video-wrap">
+									<video poster="images/2.png" loop width="100%" height="100%" id="video-2" src="https://ameim.bs2dl.yy.com/videos/bcm_description.mp4" style="object-fit:fill">
+		      							Sorry, your browser doesn't support embedded videos.
+
+									</video>
+									<div class="video_play_icon"></div>
+									<!-- <img class="video_play_icon" src="images/icon/play_nor.png" /> -->
+								</div>
+								<div class="news-time">
+									2018-07-25
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="news-title fs-24"> Not just BCM<br/>
+								<span class="fs-20">Revolution not just in the interconnection mode.<span>
+								</div>
+								<div class="news-time2 fs-16 pc-hide">
+									2018-07-25
+								</div>
+								<div class="news-desc fs-14">
+									We redefine interconnection of instant messengers, as well as business model of blockchain products. User’s privacy is well protected with our registration-less Account Key method. We built a pyramid eco-system, called ABC, around BCM. The bottom layer of the pyramid is AME blockchain, the middle layer is BCM, and the top layer is an application-rich layer called CUBE. Under the incentive mechanism of the FE economic model, participants perform their duties, and the entire ecosystem operate healthily and sustainably.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="soon-fixed hide">
+		<span class="icon-close" onclick="closeSoon()"><img src="images/icon/icon-close.png" alt=""></span>
+		<span class="fs-24 soon-text">Coming Soon</span>
+	</div>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/common.js?v=1.2"></script>
+	<script>
+		// 获取当前分辨率
+		var cur_w = $(window).width();
+		var $currunt = $(".video_play_icon");
+		var $v_play1 = $currunt.parent().find("video")[0];
+		var $v_play2 = $currunt.parent().find("video")[1];
+		function startVideo(ele,str) {
+			$(ele).parent().css('zIndex', '9');
+			document.getElementById(str).play();
+		}
+		// 这里写点击播放的代码 PC端代码
+		if(cur_w>751){
+			$(".video_play_icon").click(function(){
+				var $currunt = $(this);
+				var $v_play1 = $currunt.parent().find("video")[0];
+				$v_play1.play();
+				$currunt.css('display','none');
+			})
+		}else{
+			$v_play1.play();
+			$currunt.css('display','none');
+			window.onscroll = function(){
+				var top = $(window).scrollTop();
+				var v_top = $("#video-2").offset().top;
+				if(top>=v_top-150){
+					$v_play1.pause();
+					$v_play2.play();
+				}
+				if(top<10){
+					$v_play1.play();
+					$v_play2.pause();
+				}
+			}
+		}
+		// 监听第一个视频播放
+		$v_play1.addEventListener("playing",function(){ 
+			$(this).next().css('display','none');
+			// 开始播放后显示控制条
+			$(this).attr('controls','true');
+		})
+		// 监听第二个视频播放
+		$v_play2.addEventListener("playing",function(){ 
+			$(this).next().css('display','none');
+			// 开始播放后显示控制条
+			$(this).attr('controls','true');
+		})
+	</script>
+</body>
+
+
+</html>

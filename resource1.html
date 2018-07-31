@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css?v=5.0">
+	<link rel="stylesheet" href="css/mobile.css?v=6.0">
+	<link rel="stylesheet" href="css/animate.css?v=7.0">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/resLoader.js"></script>
+	<script src="js/common.js?v=8.0"></script>
+	<title>RESOURCE1</title>
+	<style>
+		.res-container{
+			padding-top:100px;
+		}
+		.res1-p2-text{
+			display: inline;
+		}
+		.page-desc{
+			padding-top: 80px;
+		}
+		.page2-wallet-list{
+			margin-top: 80px;
+		}
+		.first-desc{
+			padding-top: 0;
+		}
+		.res2-wrap .res-item {
+		    padding-bottom:80px;
+		}
+		@media screen and (max-width: 768px) {
+			.res-container{
+				padding-top:0;
+			}
+			.main-item{
+				padding-bottom:10px;
+			}
+			.res1-item2 .res-text-item{
+				padding: 0 15px;
+				text-align: left;
+			}
+			.res-wrap{
+				margin-bottom: 0;
+			}
+			.res-p2-wrap{
+				margin-bottom:-20px;
+			}
+			.page2-wallet-item:last-of-type{
+				margin-bottom: 10px;
+			}
+			.res2-wrap .res-item {
+			    padding-bottom:0;
+			}
+			.res1-p2-text{
+				display: inline-block;
+			    vertical-align: top;
+			    width: 93%;
+			}
+			.page-desc{
+				padding-top: 20px;
+			}
+		}
+		.res-img2{
+			width: 46%;
+		}
+		.res-wrap .p2-cont {
+		    padding-left: 10%; 
+			padding-right: 10%;
+		}
+	</style>
+</head>
+<body>
+	<div class="mobile-soon hide">Comming Soon</div>
+	<div class="mobile-nav hide-nav">
+		<span class="mobile-nav-close" onclick="closeNav()"><img src="images/icon/icon-close.png"></span>
+		<ul class="mobile-list">
+			<li class="mobile-nav-li">
+				<a href="index.html" class="mobile-nav-link"><i>-</i>HOME</a>
+			</li>
+			<li class="mobile-nav-li">
+				<a href="javascript:void(0);" class="mobile-nav-link" onclick="showDrop(this)"><i>-</i>RESOURCE</a>
+				<ul class="mobile-nav-ul">
+					<li><a href="javascript:void(0);" onclick="openSoon()" class="mobile-nav-link active">BRIEF</a></li>
+					<li><a href="javascript:void(0);" onclick="openSoon()" class="mobile-nav-link">WHITEPAPER</a></li>
+				</ul>
+			</li>
+			<li class="mobile-nav-li">
+				<a href="news.html" class="mobile-nav-link"><i>-</i>NEWS</a>
+			</li>
+		</ul>
+	</div>
+	<div class="x-container">
+		<div class="black-mask hide"></div>
+		<div class="x-nav-fixed">
+			<div class="x-nav clearfix">
+				<div class="pull-left">
+					<a href="index.html" class="fs-36 fwb">BCM</a>
+				</div>
+				<div class="pull-right">
+					<ul class="x-nav-list">
+						<li class="x-nav-li"><a href="index.html" class="x-navLink">HOME</a></li>
+						<li class="x-nav-li dropDown">
+							<a href="javascript:void(0);" class="x-navLink active">RESOURCE</a>
+							<ul class="x-nav-ul">
+								<li><a href="javascript:void(0);" onclick="openSoon()" class="active">BRIEF</a></li>
+								<li><a href="javascript:void(0);" onclick="openSoon()">WHITEPAPER</a></li>
+							</ul>
+						</li>
+						<li class="x-nav-li"><a href="index.html#download" class="x-navLink">DOWNLOAD</a></li>
+						<li class="x-nav-li"><a href="news.html" class="x-navLink">NEWS</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-title">
+			<span class="menu-btn" onclick="openNav()"><img src="images/menu-btn.png" alt=""></span>
+			<span class="fs-30"><a href="index.html">BCM</a></span>
+		</div>
+		<div class="main-container res-container">
+			<div class="main-wrapper">
+				<!-- <div class="main-item">
+					<div>
+						<span class="page-desc width80 first-desc">Hardware wallets Ensure safety of your coin</span>
+					</div>
+					<div class="res-wrap res2-wrap row" style="max-width: 1200px;margin:0 auto;">
+						<div class="col-md-6 res-item">
+							<img src="images/page2-img2.png" alt="" class="res-img1">
+							<div class="p2-cont">
+								<div class="res-title fs-22">The risk of software wallets</div>
+								<div class="res-text-list">
+									<div class="res-text-item"><span></span>The transfer address is predictable， The mnemonic word could be Easily stolen</div>
+									<div class="res-text-item"><span></span>The transaction signature is Easily to be attacked</div>
+									<div class="res-text-item"><span></span>The risk of address cheating</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 res-item">
+							<img src="images/page2-img1.png" alt="" class="res-img2">
+							<div class="p2-cont">
+								<div class="res-title fs-22">The role of the Hardware wallets</div>
+								<div class="res-text-list">
+									<div class="res-text-item"><span></span>Keep your private key from heckers</div>
+									<div class="res-text-item"><span></span>Send the coins to the right address</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-item light-blue-bg res1-item2">
+					<div>
+						<span class="page-desc">The role of the Hardware wallets</span>
+					</div>
+					<div class="res-wrap">
+						<div class="res-text-list" style="padding:0 10%;margin-top: 10px;">
+							<div class="res-text-item"><span></span><div class="res1-p2-text">Keep the user ID in the Security unit</div></div>
+							<div class="res-text-item"><span></span><div class="res1-p2-text">Keep the private key in the Security unit</div></div>
+							<div class="res-text-item"><span></span><div class="res1-p2-text">Keep the private key safe while using</div></div>
+							<div class="res-text-item"><span></span><div class="res1-p2-text">Ensure your coins transferred to the right address, and protect from the attacks of hackers</div></div>
+						</div>
+						<div class="res-p2-wrap row">
+							<div class="col-md-4 col-xs-6 res-p2-item">
+								<img src="images/page2-icon1.png" alt="" class="res-p2-img">
+								<div class="fs-16 res-p2-text">The private key will never be exposed from the Security unit</div>
+							</div>
+							<div class="col-md-4 col-xs-6 res-p2-item">
+								<img src="images/page2-icon2.png" alt="" class="res-p2-img">
+								<div class="fs-16 res-p2-text">Random number generator</div>
+							</div>
+							<div class="col-md-4 col-xs-6 res-p2-item">
+								<img src="images/page2-icon3.png" alt="" class="res-p2-img">
+								<div class="fs-16 res-p2-text">You can see every transfer of coins and signature them</div>
+							</div>
+							<div class="col-md-4 col-xs-6 res-p2-item">
+								<img src="images/page2-icon4.png" alt="" class="res-p2-img">
+								<div class="fs-16 res-p2-text">You can recovery your wallets totally offline</div>
+							</div>
+							<div class="col-md-4 col-xs-6 res-p2-item">
+								<img src="images/page2-icon5.png" alt="" class="res-p2-img">
+								<div class="fs-16 res-p2-text">The Physical defense of Security unit is very strong</div>
+							</div>
+							<div class="col-md-4 col-xs-6 res-p2-item">
+								<img src="images/page2-icon6.png" alt="" class="res-p2-img">
+								<div class="fs-16 res-p2-text">The attach of a middleman could be deafened</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<div class="main-item">
+					<div>
+						<span class="page-desc">USABILITY</span>
+					</div>
+					<div class="page2-mobile-top">
+						<img src="images/page2-mobile.png" alt="" class="page2-mobile">
+					</div>
+					<div class="page2-mobile-text clearfix res-wrap">
+						<div class="pull-left page2-mt-item1">
+							<div class="fs-22">Connection</div>
+							<div class="fs-16">
+								Securce connection with phone via bluetooth.
+							</div>
+						</div>
+						<div class="pull-right page2-mt-item2">
+							<div class="fs-22">Confirm</div>
+							<div class="fs-16">
+								Transaction interactions mainly on phone
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-item light-blue-bg">
+					<div>
+						<span class="page-desc width80">VIRTUAL CURRENCY COMPATIBILITY</span>
+					</div>
+					<div class="page2-wallet-list clearfix res-wrap">
+						<div class="page2-wallet-item">
+							<img src="images/page2-w-1.png" alt="" class="page2-wallet-img">
+							<div class="fs-22">Bitcoin</div>
+						</div>
+						<div class="page2-wallet-item">
+							<img src="images/page2-w-2.png" alt="" class="page2-wallet-img">
+							<div class="fs-22">Bitcoin Cash</div>
+						</div>
+						<div class="page2-wallet-item">
+							<img src="images/page2-w-3.png" alt="" class="page2-wallet-img">
+							<div class="fs-22">Ethereum</div>
+						</div>
+						<div class="page2-wallet-item">
+							<img src="images/page2-w-4.png" alt="" class="page2-wallet-img">
+							<div class="fs-22">Litecoin</div>
+						</div>
+						<div class="page2-wallet-item">
+							<img src="images/page2-w-5.png" alt="" class="page2-wallet-img">
+							<div class="fs-22">Dash</div>
+						</div>
+						<div class="page2-wallet-item">
+							<img src="images/page2-w-6.png" alt="" class="page2-wallet-img">
+							<div class="fs-22">Aragon</div>
+						</div>
+						<div class="page2-wallet-item">
+							<img src="images/page2-w-7.png" alt="" class="page2-wallet-img">
+							<div class="fs-22">Doge</div>
+						</div>
+						<div class="page2-wallet-item">
+							<img src="images/page2-w-8.png" alt="" class="page2-wallet-img">
+							<div class="fs-22">Augur</div>
+						</div>
+						<div class="page2-wallet-item">
+							<img src="images/page2-w-10.png" alt="" class="page2-wallet-img">
+							<div class="fs-22">Bancor</div>
+						</div>
+						<div class="page2-wallet-item mobile-hide">
+							<img src="images/page2-w-9.png" alt="" class="page2-wallet-img">
+							<div class="fs-22">Basic Attention Token</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-item page2-footer">
+					<div>
+						<span class="page-desc width80">PLATFORM COMPATIBILITY</span>
+					</div>
+					<div class="page2-footer-list clearfix res-wrap">
+						<div class="page2-footer-item">
+							<img src="images/page2-macOS.png" alt="">
+							<div class="fs-22">Mac</div>
+						</div>
+						<div class="page2-footer-item">
+							<img src="images/page2-windows.png" alt="">
+							<div class="fs-22">Windows</div>
+						</div>
+						<div class="page2-footer-item">
+							<img src="images/page2-linux.png" alt="">
+							<div class="fs-22">Linux</div>
+						</div>
+						<div class="page2-footer-item">
+							<img src="images/page2-android.png" alt="">
+							<div class="fs-22">Android</div>
+						</div>
+						<div class="page2-footer-item">
+							<img src="images/page2-ios.png" alt="">
+							<div class="fs-22">ios</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="soon-fixed hide">
+		<span class="icon-close" onclick="closeSoon()"><img src="images/icon/icon-close.png" alt=""></span>
+		<span class="fs-24 soon-text">Coming Soon</span>
+	</div>
+<script>
+window.onscroll = function() {
+	var top = $(window).scrollTop()
+	if(top>=104){
+		$('.x-nav-fixed').removeClass('light-nav').addClass('deep-nav')
+	}else{
+		$('.x-nav-fixed').addClass('light-nav').removeClass('deep-nav')
+	}
+}
+</script>
+</body>
+</html>
